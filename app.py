@@ -7,7 +7,7 @@ sentry = Sentry(app, dsn='https://3013fd71ca9641078f34f3c9d4fd262f:ddd37a1cc8e04
 @app.route('/')
 def hello():
 
-    breadcrumbs.record(message='Hey, me looking for numbers')
+    breadcrumbs.record(message='Hey, me looking for number')
     dividend = request.args.get('dividend')
     divisor = request.args.get('divisor')
     breadcrumbs.record(message='OK, me got the nummers')
