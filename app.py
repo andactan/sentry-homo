@@ -4,7 +4,6 @@ from raven.contrib.flask import Sentry
 app = Flask(__name__)
 
 sentry = Sentry(app, dsn='https://3013fd71ca9641078f34f3c9d4fd262f:ddd37a1cc8e04b728bdec6f7202c5ca2@sentry.io/1259283')
-sentry.
 @app.route('/')
 def hello():
 
